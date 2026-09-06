@@ -22,7 +22,7 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| (首期制作中) | — | — |
+| [2026-W36](results/2026-W36.md) | 双模型全库:deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 超前沿锚点登顶+视觉审查案全库首过;同名对决实锤「模型名≠能力」 |
 
 ## 免责
 

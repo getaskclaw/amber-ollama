@@ -21,7 +21,7 @@ Weekly public benchmark results of Ollama Cloud models on the private **AMBER** 
 
 | Issue | Content | Verdict |
 |---|---|---|
-| (first issue in preparation) | — | — |
+| [2026-W36](results/2026-W36.md) | Two models, full library: deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 beats frontier anchor + first-ever vision-review pass; cross-vendor duel proves model name ≠ capability |
 
 ## Disclaimer
 
