@@ -23,7 +23,8 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W36](results/2026-W36.md) | 双模型全库:deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 超前沿锚点（14/21）一案+视觉审查案迄今最高分;同名对决实锤「模型名≠能力」 |
+| [2026-W36](results/2026-W36.md) | 双模型全库:deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 超前沿锚点(14/21)一案+视觉审查案迄今最高分;同名对决实锤「模型名≠能力」 |
+| [2026-W37](results/2026-W37.md) | 新增 2 运维案补考(补齐 23 案) | glm-5.3-flash 17/23 守擂;d4f:0731 15/23;本场后 amber-eval 前三表翻 23 案 |
 
 ## 免责
 
