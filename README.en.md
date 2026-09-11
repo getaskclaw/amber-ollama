@@ -19,6 +19,15 @@ Weekly public benchmark results of Ollama Cloud models on the private **AMBER** 
 4. Case IDs and case structure are private: public results refer to cases only by stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes; internal case IDs, variant names, and case descriptions never appear.
 5. Tone: this is a community weekly measurement, not an attack on the vendor. Let the data talk; keep wording restrained.
 
+## Charts
+
+- **Report card** (2026-W37, blended 23-case tally = W36 21 cases + 2-case makeup): glm-5.3-flash leads at 17/23, deepseek-v4-flash:0731 at 15/23 — W36 15/21 and 13/21, both 2/2 in the makeup.
+  ![W37 report card: blended 23-case bars](docs/images/scorecard-2026-w37.en.png)
+- **Face profile** (W36 21-case matrix ∪ W37 2-case makeup, grouped by face): glm-5.3-flash is the only vision-face pass and goes 6/6 on ops; d4f:0731 is 5/6 on ops (lost A-a5608487).
+  ![Face profile radar: two models](docs/images/face-profile-2026-w37.en.png)
+- **Weekly trend** (W36 to W37, normalized to pass rate as the denominators differ): glm-5.3-flash 71.4%→73.9%, d4f:0731 61.9%→65.2%.
+  ![Weekly trend: case-level pass rate](docs/images/weekly-trend-2026.en.png)
+
 ## Results index
 
 | Issue | Content | Verdict |
