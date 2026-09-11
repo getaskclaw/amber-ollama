@@ -42,8 +42,9 @@ Measured 2026-09-11 on the same library (23 cases), same band (high), same endpo
 | adversarial review | -2 | 0 (both below the line) |
 | input tokens / paper | 164K | 151K |
 | list price (in / cached / out) | $0.15 / $0.03 / $0.50 | $0.15 / $0.003 / $0.60 |
+| peak price (12:00–18:00 UTC Mon–Fri) | no surcharge | 2× across the board |
 
-One-liner: same price band, same score band — pick deepseek-v4.1-flash for UI and delivery-sensitive work, glm-5.3-flash for vision scouting; 0731 can retire.
+One-liner: same price band, same score band — pick deepseek-v4.1-flash for UI and delivery-sensitive work, glm-5.3-flash for vision scouting; 0731 can retire. During the peak window d4.1f bills ~1.7–2.1× g53f, so route heavy night jobs (Beijing 20:00–02:00) to g53f.
 
 ## Results index
 
