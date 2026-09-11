@@ -1,7 +1,7 @@
 # amber-ollama
 
 Weekly public benchmark results of Ollama Cloud models on the private **AMBER** suite — cases private, results public.
-中文: [README.md](README.md)
+中文： [README.md](README.md)
 
 ## What this is
 
@@ -24,7 +24,7 @@ Weekly public benchmark results of Ollama Cloud models on the private **AMBER** 
 | Issue | Content | Verdict |
 |---|---|---|
 | [2026-W36](results/2026-W36.md) | Two models, full library: deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 beats frontier anchor (14/21) + best vision-review score to date; cross-vendor duel proves model name ≠ capability |
-| [2026-W37](results/2026-W37.md) | Makeup: the 2 new ops cases (complete the 23-case set) | glm-5.3-flash 17/23 holds the top; d4f:0731 15/23; amber-eval top-3 table flips to 23 cases |
+| [2026-W37](results/2026-W37.md) | Makeup: the 2 new ops cases (complete the 23-case set) | glm-5.3-flash 17/23 holds the top; d4f:0731 15/23; amber top-3 table flips to 23 cases |
 
 ## Disclaimer
 
