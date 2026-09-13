@@ -9,7 +9,7 @@ English: [README.en.md](README.en.md)
 - 一期固定报告：题集规模与哈希、每案 d2 分与通过/失败、终端终态、成本与时延、环境指纹、按证据纪律写的定性裁决。
 - 题目、oracle、transcript、中间产物**永不公开**（见下「发布纪律」）。
 - AMBER 是 agentic 实战题库（施工/运维/审查/视觉/需求漂移），规范与制题工具见 [getaskclaw/amber](https://github.com/getaskclaw/amber)；考题本体私有。
-- 姐妹仓：[amber-crof](https://github.com/getaskclaw/amber-crof)（CrofAI 周测）、[amber-gpt](https://github.com/getaskclaw/amber-gpt)（GPT 档位周测）。
+- 姐妹仓：[amber-crof](https://github.com/getaskclaw/amber-crof)（CrofAI 周测）、[amber-gpt](https://github.com/getaskclaw/amber-gpt)（GPT 档位周测）、[amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy)（WorkBuddy ACP 道）。
 
 ## 发布纪律（红线）
 
