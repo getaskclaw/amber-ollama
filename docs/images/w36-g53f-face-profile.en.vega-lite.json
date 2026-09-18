@@ -1,0 +1,226 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "glm-5.3-flash @ Ollama per-face profile (W36, 15/21 — one case above the anchor)",
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "no zero face: visual review 3.0 was the record; ui-build 11/12 is the most painful fail",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 480,
+ "height": 256,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "face": "ops",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4"
+     },
+     {
+      "face": "text",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "3/3"
+     },
+     {
+      "face": "req-drift",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4 variants"
+     },
+     {
+      "face": "build",
+      "v": 0.958,
+      "tier": "strong",
+      "lab": "5/6 · hardest case 7/7"
+     },
+     {
+      "face": "ui-build",
+      "v": 0.917,
+      "tier": "strong",
+      "lab": "11/12, one pin short (re-judged)"
+     },
+     {
+      "face": "vision",
+      "v": 0.778,
+      "tier": "mid",
+      "lab": "3.0 — best-ever at the time"
+     },
+     {
+      "face": "review",
+      "v": 0.667,
+      "tier": "mid",
+      "lab": "two passes (0 / +4)"
+     },
+     {
+      "face": "verify",
+      "v": 0.57,
+      "tier": "mid",
+      "lab": "0/3 cases · attribution 14/15"
+     }
+    ]
+   },
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopRight": 3,
+    "cornerRadiusBottomRight": 3
+   },
+   "encoding": {
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "ops",
+       "text",
+       "req-drift",
+       "build",
+       "ui-build",
+       "vision",
+       "review",
+       "verify"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "completion (pin pass-rate)",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "color": {
+     "field": "tier",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "strong",
+       "mid"
+      ],
+      "range": [
+       "#2e9e5b",
+       "#5b8fc9"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 10,
+      "labelExpr": "{'strong':'strong (≥0.9)','mid':'mid (0.4–0.9)'}[datum.value]"
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "ops",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4"
+     },
+     {
+      "face": "text",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "3/3"
+     },
+     {
+      "face": "req-drift",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4 variants"
+     },
+     {
+      "face": "build",
+      "v": 0.958,
+      "tier": "strong",
+      "lab": "5/6 · hardest case 7/7"
+     },
+     {
+      "face": "ui-build",
+      "v": 0.917,
+      "tier": "strong",
+      "lab": "11/12, one pin short (re-judged)"
+     },
+     {
+      "face": "vision",
+      "v": 0.778,
+      "tier": "mid",
+      "lab": "3.0 — best-ever at the time"
+     },
+     {
+      "face": "review",
+      "v": 0.667,
+      "tier": "mid",
+      "lab": "two passes (0 / +4)"
+     },
+     {
+      "face": "verify",
+      "v": 0.57,
+      "tier": "mid",
+      "lab": "0/3 cases · attribution 14/15"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "align": "left",
+    "dx": 6,
+    "color": "#444"
+   },
+   "encoding": {
+    "y": {
+     "field": "face",
+     "type": "ordinal"
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  }
+ ]
+}

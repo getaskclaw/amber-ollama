@@ -1,0 +1,363 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "同名不同脑：glm-5.3-flash，crof 道 → Ollama 道（同日同档同 21 案）",
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "Ollama 道 15/21 vs crof 道 13/21：差在视觉（+0.56，含史上首个过案）、文本、编码（最难案 1/7 → 7/7）——模型名≠能力",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 480,
+ "height": 256,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "face": "视觉",
+      "from": 0.222,
+      "to": 0.778
+     },
+     {
+      "face": "文本",
+      "from": 0.667,
+      "to": 1.0
+     },
+     {
+      "face": "审查",
+      "from": 0.5,
+      "to": 0.667
+     },
+     {
+      "face": "编码",
+      "from": 0.816,
+      "to": 0.958
+     },
+     {
+      "face": "核验",
+      "from": 0.437,
+      "to": 0.57
+     },
+     {
+      "face": "运维",
+      "from": 1.0,
+      "to": 1.0
+     },
+     {
+      "face": "需求漂移",
+      "from": 1.0,
+      "to": 1.0
+     },
+     {
+      "face": "前端",
+      "from": 1.0,
+      "to": 0.917
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "color": "#ccc",
+    "strokeWidth": 2.5
+   },
+   "encoding": {
+    "x": {
+     "field": "from",
+     "type": "quantitative"
+    },
+    "x2": {
+     "field": "to"
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "视觉",
+       "文本",
+       "审查",
+       "编码",
+       "核验",
+       "运维",
+       "需求漂移",
+       "前端"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "视觉",
+      "v": 0.222,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "文本",
+      "v": 0.667,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "审查",
+      "v": 0.5,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "编码",
+      "v": 0.816,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "核验",
+      "v": 0.437,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "运维",
+      "v": 1.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "需求漂移",
+      "v": 1.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "前端",
+      "v": 1.0,
+      "band": "from",
+      "dir": "from"
+     },
+     {
+      "face": "视觉",
+      "v": 0.778,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "文本",
+      "v": 1.0,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "审查",
+      "v": 0.667,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "编码",
+      "v": 0.958,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "核验",
+      "v": 0.57,
+      "band": "to",
+      "dir": "gain"
+     },
+     {
+      "face": "运维",
+      "v": 1.0,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "需求漂移",
+      "v": 1.0,
+      "band": "to",
+      "dir": "flat"
+     },
+     {
+      "face": "前端",
+      "v": 0.917,
+      "band": "to",
+      "dir": "loss"
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "opacity": 1,
+    "stroke": "white",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "完成度（钉过率）",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "视觉",
+       "文本",
+       "审查",
+       "编码",
+       "核验",
+       "运维",
+       "需求漂移",
+       "前端"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "size": {
+     "field": "band",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "from",
+       "to"
+      ],
+      "range": [
+       190,
+       110
+      ]
+     },
+     "legend": null
+    },
+    "color": {
+     "field": "dir",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "from",
+       "gain",
+       "flat",
+       "loss"
+      ],
+      "range": [
+       "#999999",
+       "#1e8449",
+       "#5b8fc9",
+       "#c0392b"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 10,
+      "labelExpr": "{'from':'crof 道','gain':'Ollama 道更高','flat':'持平','loss':'crof 道更高'}[datum.value]"
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "视觉",
+      "v": 0.778,
+      "t": "+0.56"
+     },
+     {
+      "face": "文本",
+      "v": 1.0,
+      "t": "+0.33"
+     },
+     {
+      "face": "审查",
+      "v": 0.667,
+      "t": "+0.17"
+     },
+     {
+      "face": "编码",
+      "v": 0.958,
+      "t": "+0.14"
+     },
+     {
+      "face": "核验",
+      "v": 0.57,
+      "t": "+0.13"
+     },
+     {
+      "face": "运维",
+      "v": 1.0,
+      "t": "0"
+     },
+     {
+      "face": "需求漂移",
+      "v": 1.0,
+      "t": "0"
+     },
+     {
+      "face": "前端",
+      "v": 1.0,
+      "t": "-0.08"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "align": "left",
+    "dx": 10,
+    "color": "#555"
+   },
+   "encoding": {
+    "x": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "y": {
+     "field": "face",
+     "type": "ordinal"
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  }
+ ]
+}
