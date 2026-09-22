@@ -55,6 +55,7 @@ English: [README.en.md](README.en.md)
 | [2026-W36](results/2026-W36.md) | 双模型全库：deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 超前沿锚点（14/21）一案+视觉审查案当时最高分（现纪录 swe-2-medium 4.0）；同名对决实锤「模型名≠能力」 |
 | [2026-W37](results/2026-W37.md) | 新增 2 运维案补考（补齐 23 案） | glm-5.3-flash 17/23 守擂；d4f:0731 15/23；本场后 amber 前三表翻 23 案 |
 | ↳ [Addendum 09-11](results/2026-W37.md)（文末） | deepseek-v4.1-flash 首考 + glm-5.3-flash 同日复测 | d4.1f 17/23 并列第二梯队（榜首 swe-2-max 18/23）；g53f 复测 16/23（快照带内）；0731 可让位 |
+| [2026-W38 更正特刊](results/2026-W38-correction.md) | W38 全库复核:本仓改判 0 格 · 挂起 5 格 | W36/W37 共 5 个矩阵格挂起,车道冻结期内不补考 |
 
 ## 免责
 

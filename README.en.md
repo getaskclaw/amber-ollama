@@ -55,6 +55,7 @@ One-liner: same price band, same score band — pick deepseek-v4.1-flash for UI 
 | [2026-W36](results/2026-W36.md) | Two models, full library: deepseek-v4-flash:0731 / glm-5.3-flash | glm-5.3-flash 15/21 beats frontier anchor (14/21) + then-best vision-review score (record now swe-2-medium 4.0); cross-vendor duel proves model name ≠ capability |
 | [2026-W37](results/2026-W37.md) | Makeup: the 2 new ops cases (complete the 23-case set) | glm-5.3-flash 17/23 holds the top; d4f:0731 15/23; amber top-3 table flips to 23 cases |
 | ↳ [Addendum 09-11](results/2026-W37.md) | deepseek-v4.1-flash debut + glm-5.3-flash same-day re-run | d4.1f 17/23 ties the second tier (board top: swe-2-max 18/23); g53f re-run 16/23 (within snapshot band); 0731 can retire |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 5 held here | 5 matrix cells across W36/W37 held; no re-exam while the lane is frozen |
 
 ## Disclaimer
 
