@@ -1,5 +1,7 @@
 # amber-ollama
 
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ Ollama Cloud: 2 papers (A-a5608487, A-8d4bc770) now NA, score 18/24 → **16'/24**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+
 Weekly public benchmark results of Ollama Cloud models on the private **AMBER** suite — cases private, results public.
 中文： [README.md](README.md)
 
