@@ -1,29 +1,29 @@
+[English](README.md) · 简体中文
+
 # amber-ollama
 
-> ⚠️ **Correction (2026-10-02, second)**: one defense-axis case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the candidate delivered, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
+> ⚠️ **Correction (2026-10-02, second)**: one defense case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the model gave in, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
 
-> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a candidate that stepped outside its paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ Ollama Cloud: 2 papers (A-a5608487, A-8d4bc770) now NA, score 18/24 → **16'/24**. The cause was an isolation defect in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
+> ⚠️ **Correction (2026-10-02)**: the papers below were answered by a model that left its own paper and touched grading material; they count neither as a pass nor as a fail. deepseek-v4.1-flash @ Ollama Cloud: 2 papers (A-a5608487, A-8d4bc770) now NA, score 18/24 → **16'/24**. The cause was an isolation fault in our exam setup; the fault is ours. The rest of this page stays as published; where they differ, the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.en.md) governs.
 
 Weekly public benchmark results of Ollama Cloud models on the private **AMBER** suite — cases private, results public.
-中文： [README.md](README.md)
 
 ## What this is
 
-- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
-
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a case with more than one variant has more runs).
 - One issue per week at `results/YYYY-Www.md`: same cases, same effort band (the thinking-effort setting), same harness (the program that runs the exam and scores it), full library against the model lineup.
-- Every issue reports: case-set size and hashes, per-case defect-hunt scores and pass/fail, terminal states (how the run process exited), cost and latency, environment fingerprint, and qualitative verdicts written under evidence discipline.
-- Cases, oracles, transcripts (full answer logs), and intermediate artifacts are **never published** (see "Publication discipline").
+- Every issue reports: case-set size and hashes, per-case defect-hunt scores and pass/fail, terminal states (how the run ended), cost and latency, environment fingerprint, and verdicts written under evidence rules.
+- Cases, oracles, transcripts (full answer logs), and intermediate artifacts are **never published** (see "Publication rules").
 - The AMBER suite spec and case-authoring tools live at [getaskclaw/amber](https://github.com/getaskclaw/amber); the case contents themselves are private.
 - Sister repos: [amber-crof](https://github.com/getaskclaw/amber-crof) (CrofAI weekly), [amber-gpt](https://github.com/getaskclaw/amber-gpt) (GPT effort-band weekly), [amber-devin](https://github.com/getaskclaw/amber-devin) (Devin lane), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek) (official DeepSeek lane), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode) (CommandCode lane), [amber-opencode](https://github.com/getaskclaw/amber-opencode) (OpenCode Go lane), [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy) (WorkBuddy ACP lane), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun).
 
-## Publication discipline (red lines)
+## Publication rules (red lines)
 
-1. Publish only: scores and aggregates, cost, latency, qualitative verdicts.
-2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, or any intermediate artifact that could reconstruct a case.
-3. Every issue pins: model ID, effort band, date (UTC), harness version, and per-case content hashes (bundle_sha (per-case content-hash fingerprint)). Hashes line up with the public hash manifest in [amber](https://github.com/getaskclaw/amber) so anyone can verify the case set has not changed.
+1. Publish only: scores and totals, cost, latency, verdicts.
+2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, or any intermediate artifact that could rebuild a case.
+3. Every issue pins: model ID, effort band, date (UTC), harness version, and per-case content hashes (bundle_sha (per-case content-hash fingerprint)). Hashes line up with the public hash manifest in [amber](https://github.com/getaskclaw/amber) so anyone can check the case set has not changed.
 4. Case IDs and case structure are private: public results refer to cases only by stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes; internal case IDs, variant names, and case descriptions never appear.
-5. Tone: this is a community weekly measurement, not an attack on the vendor. Let the data talk; keep wording restrained.
+5. Tone: this is a community weekly measurement, not an attack on the vendor. Let the data talk; keep wording simple.
 
 ## Charts
 
@@ -63,4 +63,4 @@ One-liner: same price band, same score band — pick deepseek-v4.1-flash for UI 
 
 ## Disclaimer
 
-Not affiliated with or sponsored by Ollama. Scores are snapshots of a specific week and effort band — not procurement advice.
+Not affiliated with or sponsored by Ollama. Scores are snapshots of a specific week and effort band — not buying advice.
